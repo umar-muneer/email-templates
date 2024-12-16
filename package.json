@@ -20,6 +20,7 @@
     "@sindresorhus/is": "^1.2.0",
     "consolidate": "^0.15.1",
     "debug": "^4.1.1",
+    "email-templates": "github:umar-muneer/email-templates#version6.1.1",
     "get-paths": "^0.0.7",
     "html-to-text": "^5.1.1",
     "juice": "^6.0.0",
@@ -126,7 +127,8 @@
     "lint": "xo && remark . -qfo && eslint lib",
     "nyc": "cross-env NODE_ENV=test nyc ava",
     "test": "npm run build && npm run lint && npm run ava",
-    "test-coverage": "npm run build && npm run lint && npm run nyc"
+    "test-coverage": "npm run build && npm run lint && npm run nyc",
+    "postinstall": "npm run build"
   },
   "xo": {
     "prettier": true,
